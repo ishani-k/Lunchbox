@@ -1,5 +1,5 @@
 # Lunchbox
-This is a simple website landing page for food delivery created using only HTML. The website provides information about the company, its menu, and contact details and also has a section for ordering food.
+This is a simple landing page for food delivery website created using only HTML. The website provides information about the company, its menu, and contact details and also has a section for ordering food.
 
 ## Table of Contents
 - [Getting Started](#getting-started)
