@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place an Order</title>
+    <link rel="icon" href="images/257660.png" type="image/x-icon">
+</head>
+<body>
+    <h1>Why wait ? Just Order your Ghar Ka Khana !</h1>
+    <img src="images/download (1).jpeg" alt="A plate of food" title="A wholesome lunch" loading="lazy" >
+    <p><h3>Fill in the details below:-</h3></p>
+    <form action="httpbin" method="get">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p>
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Ishani" autocomplete="on" required autofocus>
+            </p>
+            <p>
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Kundu" autocomplete="on" required >
+            </p>
+            <p>
+                <label for="phone">Phone no:</label>
+                <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{10}" required >
+            </p>
+            <p>
+                <label for="mail">Email address:</label>
+                <input type="email" name="mail" id="mail" placeholder="abc@xyz.com" required >
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>My Cart</legend>
+            <p>
+                <label for="thali">Thali:</label>
+                <select name="thali" id="thali">
+                    <option value="veg">Veg Thali</option>
+                    <option value="egg">Egg Thali</option>
+                    <option value="fish">Fish Thali</option>
+                    <option value="chicken">Chicken Thali</option>
+                    <option value="other">Other</option>
+                 </select>
+                 <label for="quantity1">Quantity:</label>
+                 <input type="number" name="quantity1" id="quantity1" min="0" max="5" step="1" value="1">
+            </p>
+            <label for="special">Specials:</label>
+            <select name="specials" id="specials">
+                <option value="veg biriyani">Veg Biriyani</option>
+                <option value="egg biriyani">Egg Biriyani</option>
+                <option value="chicken biriyani">Chicken Biriyani</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="quantity2">Quantity:</label>
+            <input type="number" name="quantity1" id="quantity1" min="0" max="5" step="1" value="1">
+            <p>
+                Extras: <br>
+                <p>
+                <input type="checkbox" name="food" id="sabji" value="sabji">
+                <label for="sabji">Sabji</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="quantity3">Quantity:</label>
+                 <input type="number" name="quantity3" id="quantity3" min="1" max="5" step="1" value="1">
+                </p>
+                <p>
+                <input type="checkbox" name="food" id="chicken" value="chicken">
+                <label for="chicken">Chicken</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="quantity4">Quantity:</label>
+                 <input type="number" name="quantity4" id="quantity4" min="1" max="5" step="1" value="1">
+                </p>
+                <p>
+                <input type="checkbox" name="food" id="egg boil" value="egg boil">
+                <label for="egg boil">Egg Boil</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="quantity5">Quantity:</label>
+                 <input type="number" name="quantity5" id="quantity5" min="1" max="5" step="1" value="1">
+                </p>
+                <p>
+                <input type="checkbox" name="food" id="egg fry" value="egg fry">
+                <label for="egg fry">Egg Fry</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="quantity6">Quantity:</label>
+                 <input type="number" name="quantity6" id="quantity6" min="1" max="5" step="1" value="1">
+                </p>
+                <p>
+                <input type="checkbox" name="food" id="egg curry" value="egg curry">
+                <label for="egg curry">Egg Curry</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="quantity7">Quantity:</label>
+                 <input type="number" name="quantity7" id="quantity7" min="1" max="5" step="1" value="1">
+                </p>
+                <input type="radio" name="cutlery" id="cutlery">
+                <label for="cutlery">Add Cutlery (Rs.10)</label>
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Address</legend>
+            <form action="httpbin" method="get">
+                    <p>
+                        <label for="house">House/Flat/Office no.</label>
+                        <input type="text" name="house" id="house" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="road">Road Name/Area/Colony</label>
+                        <input type="text" name="road" id="road" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="pin">Pincode</label>
+                        <input type="tel" name="pin" id="pin" placeholder="012345" pattern="[0-9]{5}" required >
+                    </p>
+            </form>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Anything you'd like to add:</legend>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Write something..."></textarea>
+        </fieldset>
+        <br>
+        <button type="submit" formaction="https://httpbin.org/get" formmethod="get">Place Order</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
